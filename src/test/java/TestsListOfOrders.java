@@ -9,9 +9,7 @@ import io.restassured.RestAssured;
 import order.ListOfOrderAPI;
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.hamcrest.Matchers.notNullValue;
-
 public class TestsListOfOrders {
     ListOfOrderAPI listOfOrderAPI = new ListOfOrderAPI();
     Gson gson = new GsonBuilder().setPrettyPrinting().create();

@@ -1,23 +1,15 @@
 package courier;
 import config.Config;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.given;
-import config.Config;
-
 public class CourierAPI {
-
-
-
         public Response create(CourierData courierData) {
-
             return given()
                     .header("Content-Type", "application/json")
                     .baseUri(Config.BASE_URL)
                     .body(courierData)
                     .post(Config.HANDLE_CREATING_COURIER);
         }
-
         public Response login(CourierData courierData) {
             return given()
                     .header("Content-Type", "application/json")
@@ -25,7 +17,6 @@ public class CourierAPI {
                     .body(courierData)
                     .post(Config.HANDLE_LOGIN_COURIER);
         }
-
         public void delete(String courierId) {
             given()
                     .header("Content-Type", "application/json")

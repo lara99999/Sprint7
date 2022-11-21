@@ -5,25 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba96f80f-a4fb-4119-b5a4-8fc8100db96c" name="Changes" comment="comm">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/courier/CourierID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/AvailableStation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/ListOfOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/ListOfOrderAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/OrderAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/OrderTrack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/order/PageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestsCourierLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestsCreatingCourier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestsCreatingOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestsListOfOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/OrderData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/courier/CourierID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/courier/CourierID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/AvailableStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/AvailableStation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/ListOfOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/ListOfOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/ListOfOrderAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/ListOfOrderAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/OrderAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/OrderAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/OrderTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/OrderTrack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/order/PageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/order/PageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestsCourierLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsCourierLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestsCreatingCourier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsCreatingCourier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestsCreatingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsCreatingOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestsListOfOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestsListOfOrders.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="lara99999" />
+        <option name="repository" value="Sprint7" />
+      </RepoCoordinatesHolder>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -54,18 +59,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestsCourierLogin.testCourierCanLogInAndReturnIdWithCorrectParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint7" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestsCourierLogin" />
+      <option name="METHOD_NAME" value="testCourierCanLogInAndReturnIdWithCorrectParameters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestsCourierLogin.testCourierCanLogInAndReturnIdWithCorrectParameters" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

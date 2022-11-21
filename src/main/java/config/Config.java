@@ -1,5 +1,4 @@
 package config;
-
 public class Config {
         // URL приложения Яндекс.Самокат
         public static String BASE_URL = "https://qa-scooter.praktikum-services.ru/";
@@ -13,5 +12,4 @@ public class Config {
         public static String HANDLE_ORDER_CREATE= "/api/v1/orders";
         // ручка для отмены заказа
         public static String HANDLE_ORDER_CANCELLATION = "/api/v1/orders/cancel";
-
     }

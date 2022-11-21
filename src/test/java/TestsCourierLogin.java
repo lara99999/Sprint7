@@ -3,8 +3,8 @@ import courier.CourierData;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
+import org.junit.After;
 import org.junit.Test;
-
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
@@ -12,7 +12,11 @@ public class TestsCourierLogin {
     private CourierData courierData;
     private final CourierAPI courierAPI = new CourierAPI();
     private Response response;
-
+    private String id;
+    @After
+    @DisplayName("Удаление курьера")
+    @Description("Удаляет тестовые данные, если кейсы упали")
+    public void cleanUp() {courierAPI.delete(id);}
     @Test
     @DisplayName("Тест Логин курьера с корректными параметрами")
     @Description("Создается ID курьера и возвращается код 200. Далее приводим базу курьеров в исходное состояние, удалив курьера")
@@ -22,13 +26,12 @@ public class TestsCourierLogin {
         response = courierAPI.create(courierData);
         // проверка Логин курьера с корректными параметрами
         response = courierAPI.login(courierData);
-        response.then().assertThat().body("id", notNullValue())
+        response.then().assertThat().statusCode(200)
                 .and()
-                .statusCode(200);
+                .body("id", notNullValue());
         // после теста приводим БД курьеров в исходное состояние
         courierAPI.clean(courierData);
     }
-
     @Test
     @DisplayName("Негативный тест Логин курьера с login = null")
     @Description("Возвращается код 400 и сообщение об ошибке \"Недостаточно данных для входа\"")
@@ -42,7 +45,6 @@ public class TestsCourierLogin {
                 .and()
                 .statusCode(400);
     }
-
     @Test
     @DisplayName("Негативный тест Логин курьера с password = null")
     @Description("Возвращается код 400 и сообщение об ошибке \"Недостаточно данных для входа\"")
@@ -61,7 +63,6 @@ public class TestsCourierLogin {
             System.out.println("ОР: код ответа 400. Сообщение об ошибке \"Недостаточно данных для входа\"");
         }
     }
-
     @Test
     @DisplayName("Негативный тест Логин курьера с несуществующей парой логин-пароль")
     @Description("Возвращается код 404 и сообщение об ошибке \"Учетная запись не найдена\"")

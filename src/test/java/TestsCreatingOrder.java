@@ -8,29 +8,23 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.List;
-
 import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertEquals;
-
 @RunWith(Parameterized.class)
-
 public class TestsCreatingOrder {
     private Order order;
     private final OrderAPI orderAPI = new OrderAPI();
     private final Gson gson = new Gson();
     private final List<String> checkedColor;
     private final int expectedCode;
-
     public TestsCreatingOrder(List<String> checkedColor, int expectedCode) {
         this.checkedColor = checkedColor;
         this.expectedCode = expectedCode;
     }
-
     @Parameterized.Parameters
     public static Object[][] getTestData() {
         return new Object[][]{
@@ -40,7 +34,6 @@ public class TestsCreatingOrder {
                 {List.of(), 201}
         };
     }
-
     @Before
     public void setUp() {
         // извлекаем из JSON-файла начальные тестовые данные и сериализуем в класс Order
@@ -52,7 +45,6 @@ public class TestsCreatingOrder {
             e.printStackTrace();
         }
     }
-
     @Test
     public void CreatingOrderAndReturnTrack() {
         // присваиваем полю Цвет значение из массива данных для параметризации
