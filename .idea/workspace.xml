@@ -130,4 +130,15 @@
     <MESSAGE value="comm" />
     <option name="LAST_COMMIT_MESSAGE" value="comm" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>
